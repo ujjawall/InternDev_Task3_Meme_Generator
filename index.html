@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Meme Generator</h1>
+        <div class="meme-generator">
+            <input type="text" id="top-text" placeholder="Top Text">
+            <input type="text" id="bottom-text" placeholder="Bottom Text">
+            <input type="file" id="image-input" accept="image/*">
+            <div class="text-options">
+                <label for="font-select">Font:</label>
+                <select id="font-select">
+                    <option value="Arial">Arial</option>
+                    <option value="Comic Sans MS">Comic Sans MS</option>
+                    <option value="Impact">Impact</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                </select>
+
+                <label for="color-picker">Text Color:</label>
+                <input type="color" id="color-picker" value="#ffffff">
+            </div>
+            <button id="generate-meme">Generate Meme</button>
+            <button id="download-meme">Download Meme</button>
+        </div>
+        <div class="meme-display">
+            <canvas id="meme-canvas"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
